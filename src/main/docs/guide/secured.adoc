@@ -1,0 +1,25 @@
+Adding git commit information to your application is handy.  The default simple mode only exposes the sha, time and branch name.
+You could argue that the git sha is only useful to those who have access to the source code. There are some organizations who would like to restrict commit info even further in their running app.
+
+One approach is to leverage http://docs.grails.org/latest/guide/conf.html#environments[per-environment configuration] to enable/disable and configure the endpoints differently according to their tastes.  For example if you only wanted simple mode enabled in production you might use the following config:
+```yaml
+environments:
+    production:
+        management:
+            info:
+                git:
+                    mode: simple
+```
+
+On top of the environment specific configuration, you may want to restrict usage to only authenticated users or a specific set of roles.
+The `/info` endpoint isn't a Grails controller so if you use the default annotation based approach you'll have to configure `grails.plugin.springsecurity.controllerAnnotations.staticRules`.
+
+```groovy
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+   [pattern: '/',               access: ['permitAll']],
+   [pattern: '/error',          access: ['permitAll']],
+   [pattern: '/index',          access: ['permitAll']],
+   // ...
+   [pattern: '/info',           access: ['ROLE_ADMIN', 'isFullyAuthenticated()']]
+]
+```
