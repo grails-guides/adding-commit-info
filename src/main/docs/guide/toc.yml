@@ -16,6 +16,7 @@ runningTheApp:
 configuration:
   title: Configuration
   configuringGitInfoContributor: Configuring the commit info shown
-  secured: Optionally Secure your endpoints
+  perEnvironmentConfig: Environment Configuration
+  secured: Secure your endpoints if neccesary
 tldr:
   title: tl;dr (Too long; didn't read)

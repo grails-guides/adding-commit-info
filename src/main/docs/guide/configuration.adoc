@@ -8,46 +8,5 @@ endpoints:
         enabled: true
 ```
 
-CAUTION: You should be aware that enabling the actuator endpoints opens up several endpoints that you may not want to exposed.
-You may have to secure or disable them:
-
-.Actuator Endpoints enabled by default
-|===
-|Endpoint |Description
-
-| http://localhost:8080/autoconfig[autoconfig]
-| Displays an auto-configuration report showing all auto-configuration candidates and the reason why they ‘were’ or ‘were not’ applied.
-
-
-| http://localhost:8080/beans[beans]
-| Displays a complete list of all the Spring beans in your application.
-
-| http://localhost:8080/configprops[configprops]
-| Displays a collated list of all @ConfigurationProperties.
-
-| http://localhost/dump[dump]
-| Performs a thread dump.
-
-| http://localhost/env[env]
-| Exposes properties from Spring’s ConfigurableEnvironment.
-
-| http://localhost/health[health]
-| Shows application health information (when the application is secure a simple ‘status’ when accessed over an unauthenticated connection or full message details when authenticated).
-
-| *http://localhost/info[info]*
-| *Displays arbitrary application info.*
-
-| http://localhost/metrics[metrics]
-| Shows ‘metrics’ information for the current application.
-
-| http://localhost/mappings[mappings]
-| Displays a collated list of all @RequestMapping paths.
-
-| http://localhost/trace[trace]
-| Displays trace information (by default the last 100 HTTP requests).
-
-| http://localhost:8080/heapdump[heapdump]
-| Returns a GZip compressed hprof heap dump file.
-|===
-
-Consult the documentation for more info http://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html
+CAUTION: You should be aware that enabling the _all_ off the actuator endpoints might open up several endpoints that you may not want to exposed.
+Some of the endpoints expose sensitive information and you may have to secure or disable them. Consult the documentation for more info http://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html

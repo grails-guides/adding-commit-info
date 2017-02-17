@@ -2,12 +2,14 @@ Now that we have the git commit info captured and included in our application vi
 
 Grails 3.x is based on Spring Boot and we can leverage some of the underlying tools already included in the application.
 
-[quote, Spring Boot Actuator, 'http://docs.spring.io/spring-boot/docs/current/reference/html/production-ready.html']
+[quote, Documentation for Spring Boot Actuator, 'http://docs.spring.io/spring-boot/docs/current/reference/html/production-ready.html']
 Spring Boot includes a number of additional features to help you monitor and manage your application when it’s pushed to production. You can choose to manage and monitor your application using HTTP endpoints, with JMX or even by remote shell (SSH or Telnet). Auditing, health and metrics gathering can be automatically applied to your application.
 that has some production ready features already built into it.
 
 Built into Spring boot is a module called `spring-boot-actuator` that provides these endpoints.
 The endpoints are disabled by default so the first step is to enabled them.
+
+'''
 
 If you open up `grails-app/conf/application.yml` you will find a block of configuration that looks like this:
 
