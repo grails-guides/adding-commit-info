@@ -6,7 +6,6 @@ import grails.transaction.Rollback
 import spock.lang.Specification
 
 @Integration
-@Rollback
 class InfoSpec extends Specification {
 
     def "test git commit info appears in JSON"() {
