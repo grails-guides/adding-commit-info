@@ -52,3 +52,11 @@ gitProperties {
 }
 ```
 ====
+
+'''
+
+[source,groovy]
+./complete/src/test/groovy/demo/GitPropertiesSpec.groovy
+----
+include::{sourceDir}/src/test/groovy/demo/GitPropertiesSpec.groovy[]
+----
