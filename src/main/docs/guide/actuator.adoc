@@ -20,7 +20,10 @@ include::{sourceDir}/../initial/grails-app/conf/application.yml[indent=0, lines=
 You simply have to enable the actuator endpoints by setting *`enabled: true`*
 
 [source,yaml]
-./complete/grails-app/conf/application.yml
+./grails-app/conf/application.yml
 ----
-include::{sourceDir}/grails-app/conf/application.yml[indent=0, lines=21..25]
+endpoints:
+    enabled: true
+    jmx:
+        enabled: true
 ----
