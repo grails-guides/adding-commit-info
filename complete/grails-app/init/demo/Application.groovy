@@ -1,4 +1,4 @@
-package adding.commit.info
+package demo
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration

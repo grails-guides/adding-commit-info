@@ -1,4 +1,4 @@
-package adding.commit.info
+package demo
 
 class UrlMappings {
 
