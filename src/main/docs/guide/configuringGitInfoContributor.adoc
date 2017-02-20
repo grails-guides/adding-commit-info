@@ -2,12 +2,12 @@ You may have noticed that the `/info` endpoint only a subset of the properties i
 You can display the full git properties via configuration by setting `management.info.git.mode=full`
 
 You'll set these values in `grails-app/conf/application.yml`
-```yaml
-management:
-    info:
-        git:
-            mode: full
-```
+
+[source,yaml]
+./complete/grails-app/conf/application.yml
+----
+include::{sourceDir}/grails-app/conf/application.yml[lines=28..31]
+----
 
 Then when you restart the application and access the `/info` endpoint at http://localhost:8080/info you should see something like:
 
