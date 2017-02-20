@@ -9,20 +9,14 @@ Adding a Gradle plugin is fairly straight forward.  This involves a few steps.
  . Ensuring the build script dependency will be resolved via the appropriate maven repositories
  . Applying the plugin
 
-```groovy
-buildscript {
-  repositories {
-    maven {
-      url "https://plugins.gradle.org/m2/"
-    }
-  }
-  dependencies {
-    classpath "gradle.plugin.com.gorylenko.gradle-git-properties:gradle-git-properties:1.4.17"
-  }
-}
-
-apply plugin: "com.gorylenko.gradle-git-properties"
-```
+[source,groovy]
+./complete/build.gradle
+----
+include::{sourceDir}/build.gradle[lines=1..2]
+include::{sourceDir}/build.gradle[lines=5..7]
+include::{sourceDir}/build.gradle[lines=11..13]
+include::{sourceDir}/build.gradle[lines=24]
+----
 
 '''
 
