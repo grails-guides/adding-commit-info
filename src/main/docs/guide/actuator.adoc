@@ -14,7 +14,7 @@ If you open up `grails-app/conf/application.yml` you will find a block of config
 [source,yaml]
 ./initial/grails-app/conf/application.yml
 ----
-include::{sourceDir}/../initial/grails-app/conf/application.yml[indent=0, lines=29..33]
+include::{sourceDir}/../initial/grails-app/conf/application.yml[indent=0, tag=initYmlP1]
 ----
 
 You simply have to enable the actuator endpoints by setting *`enabled: true`*
