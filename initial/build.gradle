@@ -57,3 +57,7 @@ assets {
     minifyJs = true
     minifyCss = true
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = gradleWrapperVersion
+}

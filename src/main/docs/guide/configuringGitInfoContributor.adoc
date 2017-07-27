@@ -1,4 +1,4 @@
-You may have noticed that the `/info` endpoint only a subset of the properties in `git.properties` such as the abbreviated sha, commit time and branch.
+You may have noticed that the `/info` endpoint is only a subset of the properties in `git.properties` such as the abbreviated sha, commit time and branch.
 You can display the full git properties via configuration by setting `management.info.git.mode=full`
 
 You'll set these values in `grails-app/conf/application.yml`
@@ -6,7 +6,7 @@ You'll set these values in `grails-app/conf/application.yml`
 [source,yaml]
 ./complete/grails-app/conf/application.yml
 ----
-include::{sourceDir}/grails-app/conf/application.yml[lines=28..31]
+include::{sourceDir}/grails-app/conf/application.yml[lines=36..39]
 ----
 
 Then when you restart the application and access the `/info` endpoint at http://localhost:8080/info you should see something like:
@@ -50,7 +50,7 @@ Add `grails-datastore-rest-client` plugin to your `dependencies` block
 [source,groovy]
 ./complete/build.gradle
 ----
-include::{sourceDir}/build.gradle[lines=59]
+include::{sourceDir}/build.gradle[lines=52]
 ----
 
 [source,groovy]
