@@ -6,7 +6,7 @@ You'll set these values in `grails-app/conf/application.yml`
 [source,yaml]
 ./complete/grails-app/conf/application.yml
 ----
-include::{sourceDir}/grails-app/conf/application.yml[lines=36..39]
+include::{sourceDir}/grails-app/conf/application.yml[tag=cmpYmlP1]
 ----
 
 Then when you restart the application and access the `/info` endpoint at http://localhost:8080/info you should see something like:
@@ -50,7 +50,7 @@ Add `grails-datastore-rest-client` plugin to your `dependencies` block
 [source,groovy]
 ./complete/build.gradle
 ----
-include::{sourceDir}/build.gradle[lines=52]
+include::{sourceDir}/build.gradle[tag=gradleBuildscriptP5]
 ----
 
 [source,groovy]

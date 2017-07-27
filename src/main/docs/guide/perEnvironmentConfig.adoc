@@ -8,6 +8,6 @@ For example if you only wanted simple mode enabled in production you might use t
 [source,yaml]
 ./complete/grails-app/conf/application.yml
 ----
-include::{sourceDir}/grails-app/conf/application.yml[lines=111]
-include::{sourceDir}/grails-app/conf/application.yml[lines=120..124]
+include::{sourceDir}/grails-app/conf/application.yml[tag=cmpYmlP2]
+include::{sourceDir}/grails-app/conf/application.yml[tag=cmpYmlP3]
 ----
