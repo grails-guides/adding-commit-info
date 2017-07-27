@@ -7,13 +7,13 @@ grails:
         transactionManagement:
             proxies: false
     gorm:
-        # Whether to autowire entities. 
+        # Whether to autowire entities.
         # Disabled by default for performance reasons.
         autowire: false
         reactor:
             # Whether to translate GORM events into Reactor events
             # Disabled by default for performance reasons
-            events: false              
+            events: false
 info:
     app:
         name: '@info.app.name@'
@@ -26,11 +26,13 @@ spring:
         template:
             check-template-location: false
 
+# tag::initYmlP1[]
 # Spring Actuator Endpoints are Disabled by Default
 endpoints:
     enabled: false
     jmx:
         enabled: true
+# end::initYmlP1[]
 
 ---
 grails:
