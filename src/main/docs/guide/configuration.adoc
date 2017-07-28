@@ -1,5 +1,5 @@
 You may not have wanted to enable _all_ of the default actuator endpoints.
-If you wanted to just enable the info endpoint you'll want to set `endpoints.info.enabled=true` via config and leave `endpoints.enabled=false`:
+If you wanted to just enable the `info` endpoint you'll want to set `endpoints.info.enabled=true` via config and leave `endpoints.enabled=false`:
 ```yaml
 # Spring Actuator Endpoints are Disabled by Default
 endpoints:
