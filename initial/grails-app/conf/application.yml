@@ -27,9 +27,10 @@ spring:
 # Spring Actuator Endpoints are Disabled by Default
 endpoints:
     enabled: false
+# end::initYmlP1[]    
     jmx:
         enabled: true
-# end::initYmlP1[]
+
 
 ---
 grails:
