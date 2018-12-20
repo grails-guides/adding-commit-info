@@ -17,6 +17,8 @@ info:
         version: '@info.app.version@'
         grailsVersion: '@info.app.grailsVersion@'
 spring:
+    jmx:
+        unique-names: true
     main:
         banner-mode: "off"
     groovy:
@@ -24,14 +26,16 @@ spring:
             check-template-location: false
 
 # Spring Actuator Endpoints are Disabled by Default
-endpoints:
-    enabled: false
-    info:
-        enabled: true
-    jmx:
-        enabled: true
+
 # tag::cmpYmlP1[]
 management:
+    endpoints:
+        web:
+            exposure:
+                include: info
+    endpoint:
+        info:
+            enabled: true
     info:
         git:
             mode: full
@@ -88,10 +92,6 @@ grails:
                 scriptlets: html
                 taglib: none
                 staticparts: none
-endpoints:
-    jmx:
-        unique-names: true
-
 ---
 hibernate:
     cache:

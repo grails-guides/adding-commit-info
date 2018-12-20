@@ -13,7 +13,7 @@ buildscript {
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:$assetPipelineVersion"
         classpath "org.grails.plugins:hibernate5:${gormVersion-".RELEASE"}"
         // tag::gradleBuildscriptP3[]
-        classpath "gradle.plugin.com.gorylenko.gradle-git-properties:gradle-git-properties:1.4.17"
+        classpath "gradle.plugin.com.gorylenko.gradle-git-properties:gradle-git-properties:2.0.0-beta1"
     }
 }
 // end::gradleBuildscriptP3[]
@@ -55,7 +55,7 @@ dependencies {
     testCompile "org.grails:grails-gorm-testing-support"
     testCompile "org.grails:grails-web-testing-support"
     // tag::gradleBuildscriptP5[]
-    testCompile "org.grails:grails-datastore-rest-client"
+    testCompile "io.micronaut:micronaut-http-client:$micronautVersion"
     // end::gradleBuildscriptP5[]
 }
 
