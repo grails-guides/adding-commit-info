@@ -30,9 +30,7 @@ spring:
 # tag::cmpYmlP1[]
 management:
     endpoints:
-        web:
-            exposure:
-                include: info
+        enabled-by-default: false
     endpoint:
         info:
             enabled: true
