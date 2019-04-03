@@ -1,6 +1,6 @@
 include::{commondir}/common-runapp.adoc[]
 
-After enabling the actuator endpoints, when you run the application you can go to the `/info` endpoint at http://localhost:8080/info
+After enabling the actuator endpoints, when you run the application you can go to the `/actuator/info` endpoint at http://localhost:8080/actuator/info
 and you should see some JSON formatted info like:
 
 ```json

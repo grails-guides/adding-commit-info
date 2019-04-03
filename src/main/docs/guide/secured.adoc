@@ -1,6 +1,6 @@
 In addition to the environment specific configuration, some organizations may want to restrict usage to only authenticated users or a specific set of roles.
 This can be accomplished by plugging into your security plugin.  We'll use Spring Security as a canonical example.
-The `/info` endpoint isn't a Grails controller so if you use the default annotation based approach you'll have to configure `grails.plugin.springsecurity.controllerAnnotations.staticRules`.
+The `/actuator/info` endpoint isn't a Grails controller so if you use the default annotation based approach you'll have to configure `grails.plugin.springsecurity.controllerAnnotations.staticRules`.
 
 ```groovy
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
@@ -8,7 +8,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
    [pattern: '/error',          access: ['permitAll']],
    [pattern: '/index',          access: ['permitAll']],
    // ...
-   [pattern: '/info',           access: ['ROLE_ADMIN', 'isFullyAuthenticated()']]
+   [pattern: '/actuator/info',           access: ['ROLE_ADMIN', 'isFullyAuthenticated()']]
 ]
 ```
 '''
