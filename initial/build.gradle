@@ -5,7 +5,7 @@ buildscript {
     }
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
-        classpath "com.bertramlabs.plugins:asset-pipeline-gradle:3.0.7"
+        classpath "com.bertramlabs.plugins:asset-pipeline-gradle:3.0.11"
         classpath "org.grails.plugins:hibernate5:7.0.0"
 
     }
@@ -49,7 +49,7 @@ dependencies {
     compile "org.hibernate:hibernate-ehcache:5.4.0.Final"
     console "org.grails:grails-console"
     profile "org.grails.profiles:web"
-    runtime "com.bertramlabs.plugins:asset-pipeline-grails:3.0.7"
+    runtime "com.bertramlabs.plugins:asset-pipeline-grails:3.0.11"
     runtime "com.h2database:h2"
     testCompile "org.grails:grails-gorm-testing-support"
     testCompile "org.mockito:mockito-core"
